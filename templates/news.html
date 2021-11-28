@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Prediction</title>
+    <style>
+        input[type=text], select {
+              width: 70%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+
+            input[type=submit] {
+              width: 70%;
+              background-color: #4CAF50;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+            .pre {
+              width: 50%;
+              border-radius: 5px;
+              background-color: #ff9c78;
+              padding: 20px;
+            }
+    </style>
+</head>
+<body bgcolor="#ff7f50">
+    <center><h1>Fake News Detector</h1><br><br><br>
+    <div class="pre">
+        <form action="/pred" method="post">
+            <input type="text" name="news1" placeholder="Enter Keyword" required>
+            <input type="text" name="news2" placeholder="Enter News" required><br><br>
+            <input type="submit" value="Predict">
+{#            <input type="submit" value="Train">#}
+        </form></div></center><br><br>
+</body>
+</html>
